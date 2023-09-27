@@ -8,6 +8,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route
+          path="/*"
+          element={
+            <div>
+              <h1>404 NOT Found</h1>
+            </div>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );
