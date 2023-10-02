@@ -3,11 +3,15 @@ import Slider from "react-slick";
 import "./BannerSlider.css";
 
 const BannerSlider = () => {
+  const slideImg1 =
+    "https://images.unsplash.com/photo-1506617564039-2f3b650b7010?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGdyb2Nlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60";
+
+  const slideImg2 =
+    "https://plus.unsplash.com/premium_photo-1664202219877-b32fcd5aa731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdyb2Nlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60";
   const data = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1506617564039-2f3b650b7010?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGdyb2Nlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60",
+      image: slideImg1,
       title: "Fresh & Vibrant: Vegetable Spectacular at Your Doorstep",
       description:
         "Experience a burst of flavor and health with our home-delivered Vegetable Spectacular – bringing freshness and vibrancy right to your doorstep!",
@@ -16,8 +20,7 @@ const BannerSlider = () => {
     },
     {
       id: 2,
-      image:
-        "https://plus.unsplash.com/premium_photo-1664202219877-b32fcd5aa731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdyb2Nlcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=700&q=60",
+      image: slideImg2,
       title: "Fresh & Vibrant: Vegetable Spectacular at Your Doorstep",
       description:
         "Bringing the farmer's market to your doorstep with our Fresh & Vibrant Vegetable Spectacular – taste the difference in every bite, conveniently delivered to you!",
