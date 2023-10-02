@@ -21,7 +21,7 @@ const AllProduct = () => {
       productimage: img2,
       productname: "product 2",
       productprice: 200,
-      counttype: "1 per kg",
+      counttype: "1 each",
       discountprecent: 12,
     },
     {
@@ -53,7 +53,7 @@ const AllProduct = () => {
       productimage: img2,
       productname: "product 6",
       productprice: 200,
-      counttype: "1 per kg",
+      counttype: "1 each",
       discountprecent: 12,
     },
     {
@@ -85,20 +85,20 @@ const AllProduct = () => {
       productimage: img2,
       productname: "product 10",
       productprice: 200,
-      counttype: "1 per kg",
+      counttype: "1 each",
       discountprecent: 12,
     },
   ];
-  return <div className="allproducts">
-    <h1>All Products</h1>
-    <div className="products">
-      {products.map((item)=>{
-        return(
-          <ProductCard data={item} key={item.id}/>
-        )
-      })}
+  return (
+    <div className="allproducts">
+      <h1>All Products</h1>
+      <div className="products">
+        {products.map((item) => {
+          return <ProductCard data={item} key={item.id} />;
+        })}
+      </div>
     </div>
-  </div>;
+  );
 };
 
 export default AllProduct;
