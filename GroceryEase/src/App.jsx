@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ProductPage from "./Pages/Product/ProductPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/product/:proid" element={<ProductPage/>} />
         <Route
           path="/*"
           element={
